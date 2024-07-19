@@ -19,8 +19,20 @@ function Contact() {
          </div>
       </div>
       <div className='contact-div1'>
-      <h2>hello</h2>
-
+      <div className='input-group'>
+        <input type='text' required/>
+        <label>Your Name</label>
+      </div>
+      <div className='input-group'>
+        <input type='email' required/>
+        <label>Your Email</label>
+      </div>
+      <div className='input-group'>
+        <textarea className='con-area' placeholder='Message'></textarea>
+      </div>
+      <div>
+        <button className='btn'>Sent<i class="fa-solid fa-paper-plane"></i></button>
+      </div>
       </div>
       </div>
 

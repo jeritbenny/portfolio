@@ -238,5 +238,12 @@ padding-top: 15px;
         width: 15px;
         height:15px;
     }
+    .cert-div{
+        display: block;
+    }
+        .cert-head,
+        .cert-para{
+                width: 100%;
+        }
 
 }

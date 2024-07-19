@@ -41,6 +41,7 @@
     text-decoration: none;
     color: rgb(244, 216, 7);
     padding: 0.7rem 1rem;
+    cursor: default;
 
 }
 .nav-items:hover{
