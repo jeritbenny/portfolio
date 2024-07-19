@@ -1,0 +1,242 @@
+.resume-div{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+   
+}
+.edu-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+    background-color: rgb(16, 14, 14);
+   top: 10px;
+    padding: 20px 0;
+    box-shadow: 0px -5px 10px 0px rgba(74, 69, 69, 0.5)
+}
+
+.edu-head{
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    color: orangered;
+}
+
+.edu-para{
+    width: 60%;
+}
+
+.cert-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+    background-color: rgb(16, 14, 14);
+   
+   margin-top: 30px;
+    padding: 20px 0;
+    box-shadow: 0px -5px 10px 0px rgba(74, 69, 69, 0.5)
+}
+
+.cert-head{
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    color: orangered;
+}
+
+.cert-para{
+    width: 60%;
+}
+
+.h11{
+    color: #fff;
+    padding: 5px 0;
+}
+.work-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+   margin-top: 30px;
+    padding: 20px 0;
+    background-color: rgb(16, 14, 14);
+    box-shadow:0px -5px 10px 0px rgba(74, 69, 69, 0.5);
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center; 
+}
+.work-head{
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    color: orangered;
+}
+.work-para{
+    width: 60%;
+}
+.para1{
+padding-top: 15px;
+}
+.skill{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: rgb(11, 10, 10);
+     padding: 20px 0;
+     box-shadow: 0px -5px 10px 0px rgba(74, 69, 69, 0.5)
+}
+.skill-head{
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    color: orangered;
+}
+.skill-para{
+    width: 60%;
+}
+.skill-box{
+    width: auto;
+    margin: 19px 20px 19px 0 ;
+}
+.title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+.skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background-color:rgba(0, 0, 0, 0.2) ;
+}
+.skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    border-radius: 6px;
+    background-color:rgb(223, 227, 10) ;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+
+}
+.skill-per.html{
+    width: 95%;
+    animation-delay: 0.1s;
+}
+.skill-per.css{
+    width: 85%;
+    animation-delay: 0.3s;
+}
+.skill-per.bootstrap{
+    width: 80%;
+    animation-delay: 0.4s;
+}
+.skill-per.js{
+    width: 70%;
+    animation-delay: 0.5s;
+}
+.skill-per.react{
+    width: 70%;
+    animation-delay: 0.7s;
+}
+.skill-per.express{
+    width: 50%;
+    animation-delay: 0.6s;
+}
+.skill-per.node{
+    width: 50%;
+    animation-delay: 0.3s;
+}
+.skill-per.mongo{
+    width: 50%;
+    animation-delay: 0.3s;
+}
+.skill-per.git{
+    width: 50%;
+    animation-delay: 0.9s;
+}
+
+@keyframes progress{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color:rgb(3, 3, 3);
+    padding: 3px 8px;
+    border-radius: 3px;
+    background-color: rgb(240, 206, 12);
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position:absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 14px;
+    width:14px ;
+    font-size: 18px;
+    z-index: -1;
+    background-color: rgb(240, 206, 12) ;
+    transform: translateX(-50%) rotate(45deg);
+}
+@media screen and (max-width:430px){
+    .edu-div{
+        display: block;
+    }
+    .edu-head,.edu-para{
+        width: 100%;
+    }
+    .h11{
+        padding: 20px 0 0 20px;
+    }
+    .work-div{
+        display: block;
+    }
+    .work-head,.work-para{
+        width: 100%;
+    }
+    .skill{
+        display: block;
+    }
+    .skill-head,.skill-para{
+        width: 100%;
+    }
+    .skill-box{
+        padding: 20px;
+    }
+    .tooltip::before{
+        font-size: 18px;
+        width: 15px;
+        height:15px;
+    }
+
+}
