@@ -8,6 +8,7 @@ import Resume from './Resume';
 import Projects from './Projects';
 import Contact from './Contact';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 function Home() {
   const  [text ] = useTypewriter({
@@ -62,7 +63,7 @@ function Home() {
    <div>
     <Contact/>
    </div>
-
+  <Footer/>
     </div>
   );
 }

@@ -170,6 +170,10 @@ padding-top: 15px;
     width: 50%;
     animation-delay: 0.3s;
 }
+.skill-per.angular{
+    width: 30%;
+    animation-delay: 0.3s;
+}
 .skill-per.git{
     width: 50%;
     animation-delay: 0.9s;

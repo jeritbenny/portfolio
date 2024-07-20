@@ -117,3 +117,7 @@
         margin-top: 10px;
     }
 }
+.toastify-custom {
+    background-color: #1e2021 !important; /* Background color */
+    color: #ffffff !important; /* Text color */
+  }

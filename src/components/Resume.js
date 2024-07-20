@@ -108,6 +108,14 @@ function Resume() {
               </span>
             </div>
           </div>
+          <div className="skill-box">
+            <span className="title">Angular</span>
+            <div className="skill-bar">
+              <span className="skill-per angular">
+                <span className="tooltip">30%</span>
+              </span>
+            </div>
+          </div>
 
           <div className="skill-box">
             <span className="title">Git</span>
