@@ -19,7 +19,7 @@ function Resume() {
           </div>
           <div className="para1">
             <h1 className="h11">Swasya Tech Labs</h1>
-            <p className="h11">MERN Stack Developer</p>
+            <p className="h11">React.js Developer</p>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ function Home() {
       <div className='video-container ' id='Home'>
       <video className="video" autoPlay loop muted>
         <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
+       
       </video>
       
       <div className='content'>
@@ -35,6 +35,7 @@ function Home() {
         <span className='text'>{text}</span><span><Cursor /></span>
       </h1>
       </div>
+    
       </div>
       {/* About section */}
    <div className='about'>
@@ -45,7 +46,7 @@ function Home() {
        </div>
        <div className='about2'>
         <h1 className='about-head'>.. About me ..</h1>
-        <p className='about-para'>My name is Jerit Benny. I hail from India. I am a BCA graduate from Kannur University. I had 1 year work experience in React. I had also completed MERN Stack Course from Luminar Technolab, Kochi. </p>
+        <p className='about-para'>Hello! I'm Jerit Benny, a passionate and dedicated MERN Stack Developer with a strong background in building and maintaining web applications. I hold a degree in Computer Application and have <span style={{color:"yellow"}}>1 year </span> of experience working with JavaScript, React.js, Node.js, and other modern web technologies. My expertise lies in creating dynamic, responsive, and user-friendly web applications that meet the needs of clients and users alike. I take pride in staying updated with the latest industry trends and continuously improving my skill set.Thank you for visiting my portfolio. </p>
         <button className='about-btn'>
           <a href={resume} download=' Jerit resume'>Download CV</a>
         </button>

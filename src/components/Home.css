@@ -5,11 +5,14 @@
  padding-top: 10px;
  font-size: 60px;
 }
-.head1{
+.head1,.head2{
   color: rgb(242, 241, 241);
+  font-family: cursive;
 }
 .text{
   color: orange;
+  font-family: cursive;
+
 }
 .video-container {
     position: relative;
@@ -32,13 +35,23 @@
   
   .content {
     position: relative;
-    z-index: 1;
+     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     color: white;
     text-align: center;
+  }
+  .media{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(180, 177, 177);
+    z-index: 89;
+  }
+  .text{
+    text-align: start;
   }
   .about{
     display: flex;
