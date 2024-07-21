@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import'./Home.css';
 import { useTypewriter,Cursor } from 'react-simple-typewriter'
 import video from '../assets/space.mp4'
@@ -9,8 +9,11 @@ import Projects from './Projects';
 import Contact from './Contact';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import Mouse from './Mouse';
+ 
 
 function Home() {
+  const trailDivRef = useRef(null);
   const  [text ] = useTypewriter({
     words: [  'React.js Developer','MERN Stack Developer'],
     loop: 0, // set loop to 0 for infinite loop
@@ -19,9 +22,10 @@ function Home() {
   });
   console.log('Current text:', text); // Debugging
   return (
-    <div className='home-div'>
-      
-      <div className='video-container ' id='Home'>
+    <div className='home-div' ref={trailDivRef}>
+            <Mouse targetRef={trailDivRef} />
+
+      <div className='video-container ' id='Home' >
       <video className="video" autoPlay loop muted>
         <source src={video} type="video/mp4" />
        
@@ -31,7 +35,7 @@ function Home() {
       <h1 className='heading'>
       <span className='head1'>Hai,</span>
       <br/>
-       <span className='head2'>I'm Jerit Benny.</span><br/>
+           <span className='head2'>I'm Jerit Benny.</span><br/>
         <span className='text'>{text}</span><span><Cursor /></span>
       </h1>
       </div>
